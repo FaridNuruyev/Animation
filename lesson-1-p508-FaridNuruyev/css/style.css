@@ -1,0 +1,27 @@
+.container{
+   display: flex;
+   justify-content: center;
+}
+span{
+    font-size: 100px;
+    transition-duration: .5s;
+    color: brown;
+   transition-timing-function:  cubic-bezier(0.1, 1.16, 0.52, 1.51);
+}
+.container>span:hover:nth-child(n){
+    transform: rotate(-45deg )scale(2);
+    color: blue;
+
+}
+.container>span:hover:nth-child(3n){
+    transform: rotate(-45deg )scale(2);
+    color: blue;
+}
+.container>span:hover:nth-child(2n){
+    transform: rotate(45deg )scale(2);
+    color: red;
+}
+.container>span:hover:nth-child(4n){
+    transform: rotate(45deg )scale(2);
+    color:red;
+}
